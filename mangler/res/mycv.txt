@@ -1,0 +1,134 @@
+Edward Birdsall
+Letchworth, Hertfordshire (London) UK. (October 2023)
+I am the Lead Software Engineer and Architect (Quant Developer) with a Cambridge based Hedge Fund. I have
+built, and contributed significantly to the design of, an automated Order Management System (OMS). This is the
+core piece of infrastructure which converts alpha signals into real-world orders, manages and dispatches them
+to exchanges, and handles reconciliation when FIX trade reports are returned to the Firm.
+In 2021 I finished an measurement of the decay rate of a rare nuclear decay isotope as part of my PhD. This was a
+complex analysis to measure a weak signal in data containing high levels of noise. In addition to the nuclear
+halflife, I was able to make the worlds first measurement of a parameter characterizing the spectral shape of the
+decay energy distribution. The precision of this parameter was good enough to give an indication as to which
+underlying physics theory was responsible for the decay. (Model validation.)
+My analysis combined multiple sources and distributions of data with independent measurements of background
+rates. I worked extensively on the development of models for systematic effects. My final model contained over
+40 parameters. I developed 2 methods of performing the measurement, and developed a deep understanding of
+the statistical and numerical non-linear fitting methods required to perform the analysis while doing so.
+My background combines two areas of strength. Firstly I have exposure to rigorous data analysis and research
+from my PhD in Experimental Particle Physics. Secondly, I have subsequently expanded my skills into the world
+of professional Software Engineering. I have a reputation for being highly creative, and producing reliable,
+flexible, Software Systems and Architecture.
+I am searching for an intellectually stimulating and interesting role within the Financial Services industry. I am
+interested in data, and I want to work on projects searching for Alpha with the ambition of beating everyone else
+in the market. I believe I would be most effective within a small research team. I am capable of programming in
+Python, and have used the language recently in personal projects.
+# Research Experience & Education
+The University of Manchester 2016 2021
+PhD, Experimental Particle Physics Manchester, UK
+I performed the world first measurement of the Axial-Vector coupling constant in a rare nuclear decay process,
+and performed the best measurement of the decay rate using experimental data in the presence of noise.
+I built an extensive software framework to support the analysis. This included a domain specific language (DSL)
+and a basic interpreter. I created the DSL to control and drive the entire analysis procedure, and to make the
+analysis flexible and programmable without having to change the underlying C++ code. Instead, multiple DSL
+specifications could be maintained in version control for specific measurements.
+ Worlds first measurement of a parameter characterizing the spectral shape of the decay energy distribution in a rare
+isotope decay. Worlds most sophisticated measurement of the halflife.
+ Development of multi-parameter statistical model containing over 40 parameters. Performed multi-parameter
+measurement of model parameters with complex dataset with small signal to noise ratio, using non-linear numerical
+optimization.
+ Development of models to characterize systematics. Integration of systematic penalty parameters into numerical
+modelling.
+ Extensive statistical sensitivity measurements and measurements of confidence levels.
+ Sensitivity studies to predict performance of future experiments using Monte-Carlo (MC) simulation.
+ Algorithm optimization and development for processing of large datasets.
+ Performed analysis of timestamps from track detector hardware. Measured correlations in data and implemented a
+realistic model as a C++ 11 shared library plugin to improve results produced by Monte-Carlo detector simulation.
+ Experience producing publication quality figures, graphics and research presentations.
+ Designed a bespoke, fast sorting algorithm for the purposes of sorting specific types of data. Performs orders of
+magnitude better than Quick Sort under some conditions.
+ Taught Undergraduate Laboratory, 1 day per week, including statistical data analysis with Matlab and Python!
+The University of Manchester
+Masters of Theoretical Physics Manchester, UK
+ First Class degree comfortably exceeding requirements. Advanced Statistical Physics: (Stochastic Calculus and
+Differential Equations, Black-Scholes and Option Pricing, Fokker-Plank Equation, Advanced Probability Theory, Markov
+Chains, Monte Carlo Processes and Algorithms). C++ 11 Object Oriented Programming. Thermodynamics
+and Statistical Physics.
+ Complex Systems / Stochastic Dynamics Masters Project. Development of numerical simulations for complex dynamics
+systems. Markov Chain analysis techniques and continuum dynamics limits. Runge-Kutta ODE numerical modelling.
+Statistical model implementation with Nvidia CUDA (GPGPU). Shared memory algorithms and performance
+measurement with Nvidia profiling tools.
+ Experimental Particle Physics analysis Masters Project. Characterized boost variable using Atlas LHC data.
+ Non-Linear Physics Dept. Summer Internship. C++ algorithms for Runge-Kutta integration of non-linear ODEs. Analysis
+of noise in stochastic system. C++ fractal rendering software.
+ Audio triggered lighting system for student music festival. Technologies used include Raspberry Pi, FPGA,
+microcontrollers and embedded C, Fourier mathematics and Digital Signal Processing with C++.
+Employment and Work Experience
+Exodus Point and Grantabridge Research (Hedge Fund) Mar 2023  Present
+Quantitative Developer, Lead Software Engineer, Systems Architect Cambridge, UK
+Grantabridge Research is a startup Hedge Fund with an alpha strategy trading FX and Commodities Futures.
+Grantabridge have a business-to-business contract with Exodus Point, who provide execution and
+infrastructure support. I perform multiple roles within Grantabridge. I am a technical expert and technology
+consultant, the Lead Software Engineer, Software Architect, and Quantitative Developer.
+I provide technical expertise in a range of technologies, capabilities to design and build flexible and robust
+software systems, and the mathematical background necessary to implement quantitative systems. The
+primary technologies we use include Rust and Kafka.
+ Contributed significantly to the high-level "Whiteboard" Systems Design. Resolved design problems on paper before
+writing a line of code.
+ Designed and built Kafka libraries to provide a uniform framework data-exchange layer, and to support multiple
+datatypes per topic. Extended the functionality to allow message types to be returned directly to client code,
+dramatically increasing team productivity.
+ Implemented automated test benches including a design for a "fake" Kafka cluster for system-wide integration testing.
+ Designed and built multiple key infrastructure components, including VAR (Value At Risk) Engine, Exchange Trading
+Hours system to prevent trading during low-liquidity periods, reconciliation components, and fast Rolling-Median
+algorithms.
+ Presented a lecture on Git to bootstrap the team. Taught the team how to use Linux.
+ Resolved Kerberos authentication problems permitting Rust based components to connect to Microsoft SQL Database.
+Torstone Technology Post-Trade Solutions
+Software Engineer, Accounting Team London, UK
+Torstone Technology is a software house specializing in high performance and flexible software solutions for
+the financial industry. The primary technologies used include C++ 20, Oracle SQL and Linux. The company
+consists of software engineering experts and financial industry specialists.
+I played an active role in mentoring two new joiners, including teaching them Git and Linux. I was appointed as
+being responsible for Secure Systems development with the Accounting Team. Further, I was appointed to
+report to the Release Meetings Group, where I reported on QA diagnostics, failures and release problems.
+ Successfully delivered improvements to Post-Trade Accounting products. Implementation of new financial reports.
+ Backend business finance logic written in C++. GUI development with Microsoft Visual Studio and C#.
+ Development of Microservices and Webservice REST APIs with Swagger framework for automated system integration.
+ Fixed integer conversion logic bug in Core Systems code, and replaced existing library with a modern C++ solution using
+Template Metaprogramming, moving runtime logic to compile time with templates. Resulted in a smaller and more
+efficient binary code.
+ Oracle SQL database management including release and support of SQL patches as part of software release cycle.
+ Expanded the range and improved the quality of unit tests with automated testing and Boost framework.
+ Reviewed existing C++ 11 and earlier code to update to modern C++ 17 and 20 standards. Reorganized software into
+modular components with CMake build system.
+ Overhauled new joiners training resulting in more than 50 % reduction in the time required from managers to train
+new developers. Trained new graduates in C++, version control (Git), Oracle Linux, QA and Unit Testing.
+ Software Security training course, responsible for advocating for secure software best practices.
+BAE Systems Applied Intelligence, Other May 2021 Jan 2022
+Software Engineer Guildford, UK
+ VHDL training course. Vivado and Xilinx FPGAs.
+ Successfully delivered a prototype system based on Raspberry-Pi and electronic sensors, with measurements
+characterizing sensor performance and sensitivity. Provided diagnostics of Raspberry-Pi Firmware bugs for R-Pi
+foundation resulting in firmware patches. Python 3 software for data acquisition and processing. Software library for
+hardware sensor and reverse-engineering of sensor operation. Debugging of communication interfaces with
+oscilloscope.
+ Reverse engineering of legacy systems project. Embedded systems C and FPGA firmware. C++ MFC (Microsoft Windows)
+GUI development. Network sockets interface programming and debugging.
+ Implementation of multi-threaded C++ 20 webserver. IP v4/v6 TCP sockets programming. Asynchronous functions
+(async), futures and promises, mutex and condition variables.
+ Computer vision algorithms. Parallel implementation with Nvidia CUDA and GPGPU. (Precision AI, Canada)
+# Personal Projects and Software Examples
+Overview of Interesting Personal Projects
+I have a long history of developing my own software projects. The most recent and interesting project has been
+to analyze UK Housing Market trends using Open Data from HM Land Registry, as well as data obtained using a
+Python DOM Webscraper.
+Prior to this I have written Ray-Tracing engines, a Modular Programmable Text Editor, a Planetary Orbit Tracking
+Simulation, among others. I have a long history of interest in Design Patterns Theory and did a research project
+on Type-Erasure and Metaprogramming techniques in C++, from which I built a Type-Erasure library.
+ Python Pandas analysis of UK housing market open data. Mortgage calculations and future net worth modelling.
+ Python Selenium (automated Chrome Browser) HTML Webscraper. Previously implemented with JavaScript, using
+NodeJS and Puppeteer (automated Chrome Browser). Collects live market house price data, storing to MariaDB and/or
+Postgres.
+ Ray-Tracing engine with realistic physics models.
+ Modular programmable Text Editor. Built with SDL2.
+ University C++ course Data Analysis and Graph Plotting Library. C++ implementation of an in-memory spreadsheet
+library similar to Python Pandas, with a graphical plotting library. Demonstration output
