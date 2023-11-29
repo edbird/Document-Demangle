@@ -4,6 +4,8 @@
 import json
 import pygtrie
 
+from libdemangle import search_for_longest_word_limited
+
 
 class SystemState():
     
@@ -100,100 +102,6 @@ def demangle_document(dictionary_trie, mangled_document):
     demangled_document_word_list = system_state.words
     demangled_document = ' '.join(demangled_document_word_list)
     return demangled_document
-
-
-    if find_next_word(dictionary_trie, mangled_document, index_start, demangled_document_word_list) is None:
-        print(f'failed to complete algorithm')
-        return None
-    else:
-        # construct whole document from words
-        demangled_document = ' '.join(demangled_document_word_list)
-        return demangled_document
-    
-    
-    while index_start < index_end:
-        
-        next_word = search_for_word(
-            dictionary_trie,
-            mangled_document[index_start:index_end])
-        
-        if next_word is None:
-            print(f'failed to find next word')
-            print(f'{mangled_document[index_start:index_start+20]}')
-            break
-        
-        print(f'{index_start}, next_word={next_word}')
-        
-        demangled_document = add_word_to_demangled_document(
-            demangled_document, next_word)
-        
-        index_start += len(next_word)
-        
-        
-    # construct whole document from words
-    demangled_document = ' '.join(demangled_document_word_list)
-        
-    return demangled_document
-    
-   
-def search_for_longest_word_limited(dictionary_trie, mangled_document, index_start, maximum_length):
-        
-    # debugging:
-    debug = False
-    if maximum_length is not None:
-        debug = True
-        print(f'word search length limited to {maximum_length}')
-        print(f'next 20 characters of document: {mangled_document[index_start:index_start+maximum_length]}')
-    
-    if maximum_length is None:
-        maximum_length = len(mangled_document) - index_start
-    
-    while True:
-        if maximum_length < 1:
-            return None
-        else:
-            trial_word = mangled_document[index_start:index_start+maximum_length]
-            
-            if debug:
-                print(f'trial_word={trial_word}')
-            
-            if dictionary_trie.has_key(trial_word):
-                return trial_word
-            else:
-                maximum_length -= 1
-    
-    
-def search_for_longest_word(dictionary_trie, mangled_document, start_index, end_index):
-    
-    while True:
-        if end_index - start_index < 1:
-            return None
-        else:
-            trial_word = mangled_document[start_index:end_index]
-            
-            if dictionary_trie.has_key(trial_word):
-                return trial_word
-            else:
-                end_index -= 1
-        
-     
-def search_for_word(dictionary_trie, mangled_document_slice):
-    
-    slice_length = len(mangled_document_slice)
-    
-    while True:
-        trial_word = mangled_document_slice[:slice_length]
-        #print(trial_word)
-        #print(slice_length)
-        
-        if dictionary_trie.has_key(trial_word):
-            print(f'found search hit: {trial_word}')
-            return trial_word
-        else:
-            if slice_length > 1:
-                slice_length -= 1
-            else:
-                return None
     
     
 def add_word_to_demangled_document(demangled_document, next_word):
