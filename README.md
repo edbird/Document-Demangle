@@ -5,6 +5,9 @@ Document De-mangler
 
 - `mangler`: Contains code to mangle an input document
 - `demangler`: Contains code to de-mangle the mangled document
+- look at `demangler/res/mycv_demangled.txt` to see the demangled output
+- look at `mangler/res/mycv_output_with_space.txt` to see the original document with postprocessing to remove numbers and special characters, double spaces...
+- look at `mangler/res/mycv_output.txt` to see the input to the demangler, this is the same as the above document but with the final remaining spaces removed
 
 Mangling is done by removing all numbers and special characters. A copy of the mangled document *with spaces* is saved for later comparison to the demanged document.
 
